@@ -23,7 +23,7 @@
 + Java 8 or higher
 + [xor-tool](https://github.com/hellman/xortool)
 + [imagick](https://imagemagick.org/)
-+ tree
++ [tree](https://github.com/Hanekihyouka/unix-tree) (optional , if you want to gen tree)
 
 [OrangeJuice-WaveExtractor](https://github.com/Hanekihyouka/OrangeJuice-WaveExtractor) for wave audio
 

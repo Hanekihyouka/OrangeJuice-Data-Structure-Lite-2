@@ -1,14 +1,15 @@
 echo -e "\033[32m" "Start generating structure." "\033[0m"
-if [ ! -d tree/  ]
+if [ ! -d structure/  ]
 then
-  mkdir tree/
+  mkdir structure/
 fi
 
 for file in unzip/*
 do
     if test -d $file
     then
-        tree -Js $file > tree/$(basename $file .pak).json
+        echo -e "\033[32m" $file " -> tree" "\033[0m"
+        ./tree -Js --md5 $file > structure/$(basename $file .pak).json
     fi
 done
 
@@ -16,6 +17,7 @@ for file in audio/*
 do
     if test -d $file
     then
-        tree -Js $file > tree/$(basename $file .pak).json
+        echo -e "\033[32m" $file " -> tree" "\033[0m"
+        ./tree -Js --md5 $file > structure/$(basename $file .pak).json
     fi
 done
