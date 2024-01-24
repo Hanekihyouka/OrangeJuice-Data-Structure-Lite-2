@@ -33,6 +33,7 @@ done
 
 for pak in ${whitelist[@]}
 do    
+    #  <<=== i may remove this part later
     # ogg
     if [[ $pak == $oggpattern ]]; then
     
@@ -53,6 +54,7 @@ do
         rm -rf audio/$pak/*
         java -jar OrangeJuice-WaveExtractor.jar common/data/$pak audio/$pak
         
+    #  ===>> since audio files are zipped in audio.pak and all format in .oga   
     # zip
     elif [ $(xxd -l 4 -ps common/data/$pak) == "504b0304" ]; then
 
