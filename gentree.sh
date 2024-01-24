@@ -12,12 +12,3 @@ do
         ./tree -Js --md5 $file > structure/$(basename $file .pak).json
     fi
 done
-
-for file in audio/*
-do
-    if test -d $file
-    then
-        echo -e "\033[32m" $file " -> tree" "\033[0m"
-        ./tree -Js --md5 $file > structure/$(basename $file .pak).json
-    fi
-done
