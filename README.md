@@ -18,12 +18,14 @@
 
 ## requirement
 
-+ Linux ( **ONLY WORK ON LINUX** )
++ Linux (need bash)
 + unzip
-+ Java 8 or higher
 + [xor-tool](https://github.com/hellman/xortool)
 + [imagick](https://imagemagick.org/)
-+ [tree](https://github.com/Hanekihyouka/unix-tree) (optional , if you want to gen tree)
+
+### older version requirement
++ ~~Java 8 or higher~~
++ ~~[tree](https://github.com/Hanekihyouka/unix-tree) (optional , if you want to gen tree)~~
 
 [OrangeJuice-WaveExtractor](https://github.com/Hanekihyouka/OrangeJuice-WaveExtractor) for wave audio
 
