@@ -22,12 +22,12 @@ do
         if [ $dathead == "44445320" ] # dds
         then
             echo -e "\033[32m" "  png <- dds" "\033[0m"
-            magick convert $datfile $outpath/$datbasename".png"
+            convert $datfile $outpath/$datbasename".png"
         elif [ $dathead == "257c0a42" ] # xor-dds
         then
             echo -e "\033[32m" "  png <- dds <- dds(xor)" "\033[0m"
             xortool-xor -h $key -f $datfile > $outpath/$datbasename".dds"
-            magick convert $outpath/$datbasename".dds" $outpath/$datbasename".png"
+            convert $outpath/$datbasename".dds" $outpath/$datbasename".png"
             rm $outpath/$datbasename".dds"
         elif [ $dathead == "e8681725" ] # xor-png
         then
